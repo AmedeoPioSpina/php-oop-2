@@ -3,16 +3,15 @@
 
     class Product extends Category {
         public $title;
-        // public $price;
-        // public $imgUrl;
+        public $price;
+        public $imgUrl;
 
-        public function __construct($name, $_title )
+        public function __construct(string $_name, string $_specie, string $_articleTypology, string $_iconCategoryUrl, $_title, float $_price, string $_imgUrl )
         {
-            parent::__construct($name, $_title);
+            parent::__construct($_name, $_specie, $_articleTypology, $_iconCategoryUrl);
             $this->title = $_title;
-            // $this->title = $_productInfo[1];
-            // $this->price = $_productInfo[2];
-            // $this->imgUrl = $_productInfo[0];
+            $this->price = $_price;
+            $this->imgUrl = $_imgUrl;
         }
     };
 ?>

@@ -2,7 +2,7 @@
 require_once __DIR__ . '/Models/Category.php';
 require_once __DIR__ . '/Models/Product.php';
 
-$product = new Product('felino', 'topo');
+$product = new Product('Gatto', 'Felini', 'Gioco', 'imgCategoria', 'Topo di pezza', '2,99', 'immagine topo di pezza');
 
 ?>
 
@@ -14,8 +14,15 @@ $product = new Product('felino', 'topo');
     <title>Document</title>
 </head>
 <body>
-    <?php 
-        var_dump($product);
-    ?>
+    <main>
+        <ul>
+            <!-- <?php foreach($product as $key -> $value ){ ?>
+                <li>
+
+                </li>
+            <?php } ?> -->
+            
+        </ul>
+    </main>
 </body>
 </html>
