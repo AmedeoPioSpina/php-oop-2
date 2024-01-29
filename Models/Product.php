@@ -1,17 +1,26 @@
 <?php 
-    require_once __DIR__ . '/Category.php';
-
-    class Product extends Category {
-        public $title;
+    class Product {
+        public $name;
+        public $description;
         public $price;
-        public $imgUrl;
+        public $imageUrl;
+        public $isInStock;
+        public $quantity;
+        public $category;
 
-        public function __construct(string $_name, string $_specie, string $_articleTypology, string $_iconCategoryUrl, $_title, float $_price, string $_imgUrl )
+        public function __construct(string $_name, string $_description, float $_price, string $_imageUrl, bool $_isInStock, int $_quantity, Category $_category)
         {
-            parent::__construct($_name, $_specie, $_articleTypology, $_iconCategoryUrl);
-            $this->title = $_title;
+            $this->name = $_name;
+            $this->description = $_description;
             $this->price = $_price;
-            $this->imgUrl = $_imgUrl;
+            $this->imageUrl = $_imageUrl;
+            $this->isInStock = $_isInStock;
+            $this->quantity = $_quantity;
+            $this->category = $_category;
+        }
+
+        public function getProductInfo(){
+            return $this->name . ', ' . $this->description . ', ' . $this->imageUrl . ', ' . $this->isInStock . ', ' . $this->quantity . ', ' . $this->category->name;
         }
     };
 ?>

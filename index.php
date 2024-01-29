@@ -1,8 +1,12 @@
 <?php 
-require_once __DIR__ . '/Models/Category.php';
 require_once __DIR__ . '/Models/Product.php';
+require_once __DIR__ . '/Models/Category.php';
+require_once __DIR__ . '/Models/Food.php';
+require_once __DIR__ . '/Models/Toy.php';
+require_once __DIR__ . '/Models/Kennel.php';
 
-$product = new Product('Gatto', 'Felini', 'Gioco', 'imgCategoria', 'Topo di pezza', '2,99', 'immagine topo di pezza');
+$catsCategory = new Category('Gatti', 'Prodotti per gatti', 'https://cdn-icons-png.flaticon.com/512/220/220124.png');
+$caniCategory = new Category('Cani', 'Prodotti per cani', 'https://cdn-icons-png.flaticon.com/512/620/620851.png');
 
 ?>
 
@@ -21,7 +25,7 @@ $product = new Product('Gatto', 'Felini', 'Gioco', 'imgCategoria', 'Topo di pezz
 
                 </li>
             <?php } ?> -->
-            
+
         </ul>
     </main>
 </body>

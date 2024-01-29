@@ -1,16 +1,14 @@
 <?php 
     class Category {
         public $name;
-        public $specie;
-        public $articleTypology;
-        public $iconCategoryUrl;
+        public $description;
+        public $iconUrl;
 
-        public function __construct(string $_name, string $_specie, string $_articleTypology, string $_iconCategoryUrl)
+        public function __construct(string $_name, string $_description, string $_iconUrl)
         {
             $this->name = $_name;
-            $this->specie = $_specie;
-            $this->articleTypology = $_articleTypology;
-            $this->iconCategoryUrl = $_iconCategoryUrl;
+            $this->description = $_description;
+            $this->iconUrl = $_iconUrl;
         }
     }
 ?>
