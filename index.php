@@ -50,11 +50,19 @@ $products = [
                         }
                         ?>
                     </p>
-                <p>
-                    <?php
-                        echo 'Category: ' . $product->category->name;
-                    ?>
-                </p>
+                <ul>
+                    <?php foreach($product as $chiave => $valore){ ?>
+                        <?php if(is_a($valore, 'Category')){ ?>
+                            <li>
+                                <?php echo 'Category: ' . $product->category->name ?>
+                            </li>
+                        <?php }else { ?>
+                            <li>
+                                <?php echo $chiave . ': ' . $valore ?>  
+                            </li>
+                        <?php }?>
+                    <?php } ?>
+                </ul>
                 </li>
             <?php } ?>
 
