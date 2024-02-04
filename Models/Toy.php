@@ -2,7 +2,7 @@
 
 require_once __DIR__ . '/Product.php';
 
-class Toy extends Product {
+class Kennel extends Product {
     public $material;
 
     public function __construct(string $_name, string $_description, float $_price, string $_imageUrl, bool $_isInStock, int $_quantity, Category $_category, string $_material)
