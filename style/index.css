@@ -1,0 +1,16 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+main ul {
+  list-style: none;
+}
+main ul .card {
+  border: 2px solid black;
+  margin-bottom: 1rem;
+}
+main ul .card img {
+  width: 10rem;
+}/*# sourceMappingURL=index.css.map */
